@@ -1,49 +1,25 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
-node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-app-example
-
-.codegpt
+# 📁 Fichiers inutiles à GitHub
 node_modules/
 .expo/
 .expo-shared/
-android/
-ios/
-*.log
+npm-debug.log
+*.tar.gz
+
+# 🧪 Build / output files
+dist/
+build/
+*.apk
+*.aab
+
+# 💣 Évite les fichiers lourds
 *.zip
 *.mp4
-assets/large/
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.psd
+*.mov
+
+# ⚙️ Environnements
+.env
