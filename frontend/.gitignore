@@ -1,25 +1,27 @@
-# 📁 Fichiers inutiles à GitHub
-node_modules/
+# Node dependencies
+**/node_modules/
+**/dist/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Env files
+.env
+
+# EAS cache
 .expo/
 .expo-shared/
-npm-debug.log
-*.tar.gz
 
-# 🧪 Build / output files
-dist/
-build/
+# Others
 *.apk
 *.aab
-
-# 💣 Évite les fichiers lourds
-*.zip
-*.mp4
-*.mp3
-*.png
-*.jpg
-*.jpeg
-*.psd
-*.mov
-
-# ⚙️ Environnements
-.env
