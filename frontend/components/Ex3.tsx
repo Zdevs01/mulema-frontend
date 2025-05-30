@@ -72,7 +72,7 @@ export default function Ex3() {
         if (Platform.OS !== 'web') {
           await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
         }
-        const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/success.wav'));
+        const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/success.mp3'));
         await sound.playAsync();
         setTimeout(() => {
           router.push('/ex4');
@@ -82,7 +82,7 @@ export default function Ex3() {
         if (Platform.OS !== 'web') {
           await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
         }
-        const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/fail.wav'));
+        const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/fail.mp3'));
         await sound.playAsync();
       }
     }

@@ -52,7 +52,7 @@ export default function Ex4() {
 
   const playSuccessSound = async () => {
     const { sound } = await Audio.Sound.createAsync(
-      require('@/assets/sounds/success.wav')
+      require('@/assets/sounds/success.mp3')
     );
     await sound.playAsync();
   };
