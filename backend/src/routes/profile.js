@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../config/db");
-const authenticateToken = require("../middlewares/auth");
+const { protect } = require("../middlewares/authMiddleware"); // ✅ Corrigé
 
 // 🔁 Modifier le profil de l’utilisateur connecté
-router.put("/", authenticateToken, async (req, res) => {
+router.put("/", protect, async (req, res) => {
   const userId = req.user.id;
   const { username, email, photo_url } = req.body;
 
